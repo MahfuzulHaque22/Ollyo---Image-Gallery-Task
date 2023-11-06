@@ -1,0 +1,223 @@
+body {
+
+  margin: 80px;
+}
+
+.im {
+  width: auto;
+  height: fit-content;
+}
+
+#main {
+  margin: 5px;
+  border: 1px dashed #0e0e0e;
+  float: left;
+  width: 200px;
+  height: 195px;
+  border-radius: 10px;
+}
+
+#main p {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 170px;
+  color: #000000;
+  font-family: Arial;
+}
+
+#main input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 195px;
+  outline: none;
+  opacity: 0;
+  border: #000000;
+  border-radius: 40px;
+}
+
+#main button {
+  margin: 0;
+  color: #fff;
+  background: #16a085;
+  border: none;
+  width: 508px;
+  height: 35px;
+  margin-top: -20px;
+  margin-left: -4px;
+  border-radius: 4px;
+  border-bottom: 4px solid #117a60;
+  transition: background 0.2s ease, color 0.2s ease;
+  outline: none;
+}
+
+#main button:hover {
+  background: #149174;
+  color: #0c5645;
+}
+
+#main button:active {
+  border: 0;
+}
+
+.image-order {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.wrapper {
+  margin: 10px auto;
+  max-width: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+div.gallery {
+  margin: 8px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+div.gallery:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+div.desc {
+
+  text-align: center;
+}
+
+.error-msg {
+  color: salmon;
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Keyframes for fading in error messages */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.gallery[id="1"] {
+  border: 2px solid rgb(254, 254, 254);
+  width: 400px;
+  height: 400px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+/* CSS for the delete icon */
+.delete-icon {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* CSS to show the delete icon when hovering over the image */
+.gallery:hover .delete-icon {
+  display: block;
+  opacity: 1;
+}
+
+/* Additional styles for the delete icon */
+.delete-icon {
+  color: red;
+  position: absolute;
+  top: -30px;
+  margin-left: 20px;
+  cursor: pointer;
+  z-index: 1;
+  /* Ensures the icon appears above the image */
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  #main {
+    width: 100%;
+  }
+}
+
+/* Add this CSS code to your stylesheet or component */
+
+/* Style for the checkbox */
+input[type="checkbox"] {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  z-index: 1;
+  opacity: 10;
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Style for the checkbox label (custom checkbox) */
+input[type="checkbox"] + label {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed (should match the checkbox) */
+  right: 10px; /* Adjust the right position as needed (should match the checkbox) */
+  width: 20px; /* Set the width of the custom checkbox */
+  height: 20px; /* Set the height of the custom checkbox */
+  background-color: #930f0f; /* Background color for the custom checkbox */
+  border: 1px solid #861414; /* Border for the custom checkbox */
+}
+
+/* Style for the checkbox when checked */
+input[type="checkbox"]:checked + label {
+  background-color: #007bff; /* Change the background color when checked */
+  border-color: #007bff; /* Change the border color when checked */
+}
+
+/* Style for the image container */
+.gallery {
+  position: relative;
+  /* Your existing styles for the gallery container */
+}
+
+/* Style for selected images */
+
+
+/* Style for the "Delete Selected" button */
+button.delete-selected {
+  background-color: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  margin: 20px 150px;
+  border-radius: 10px;
+}
+
+button.delete-selected:hover {
+  background-color: #d00; /* Change background color on hover */
+}
+
+/* Show the button when there are selected images */
+.gallery.selected + button.delete-selected.visible {
+  display: block;
+}
