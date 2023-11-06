@@ -1,6 +1,5 @@
 # Ollyo -  Task for the Fresher React JS Developers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Objective:
 Create a responsive image gallery using React JS with the following features: reordering, deleting multiple images, and setting a feature image. The gallery should be visually appealing and provide a seamless user experience.
