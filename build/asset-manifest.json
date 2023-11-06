@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/css/main.c4af6edf.css",
+    "main.js": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/js/main.7bf08f15.js",
+    "static/js/787.266b91dc.chunk.js": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/js/787.266b91dc.chunk.js",
+    "index.html": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/index.html",
+    "main.c4af6edf.css.map": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/css/main.c4af6edf.css.map",
+    "main.7bf08f15.js.map": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/js/main.7bf08f15.js.map",
+    "787.266b91dc.chunk.js.map": "/MahfuzulHaque22.github.io/Ollyo---Image-Gallery-Task/static/js/787.266b91dc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4af6edf.css",
+    "static/js/main.7bf08f15.js"
+  ]
+}
